@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfCode Academy | Web Dev Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>SelfCode</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Learn Web Development <span class="highlight">The Right Way</span></h1>
+                <p class="hero-text">Master HTML, CSS & JavaScript with hands-on projects. Build real websites from day one.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Start Learning</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-snippet">
+                    <div class="snippet-header">
+                        <span>index.html</span>
+                    </div>
+                    <pre><code>&lt;div class="container"&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;p&gt;Start coding today!&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Grid Section -->
+    <section class="grid-demo" id="about">
+        <div class="container">
+            <h2 class="section-title">CSS Grid & Flexbox</h2>
+            <p class="section-subtitle">Modern layout techniques for responsive design</p>
+            
+            <!-- Flexbox Example -->
+            <div class="flex-demo">
+                <h3>Flexbox Container</h3>
+                <div class="flex-container">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                    <div class="flex-item">Item 4</div>
+                </div>
+            </div>
+
+            <!-- Grid Example -->
+            <div class="grid-demo-content">
+                <h3>CSS Grid Layout</h3>
+                <div class="grid-container">
+                    <div class="grid-item header">Header</div>
+                    <div class="grid-item sidebar">Sidebar</div>
+                    <div class="grid-item main">Main Content</div>
+                    <div class="grid-item footer">Footer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Cards -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Our Learning Path</h2>
+            <div class="course-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML Fundamentals</h3>
+                    <p>Learn semantic markup, forms, tables, and accessibility</p>
+                    <div class="card-footer">
+                        <span class="level">Beginner</span>
+                        <span class="duration">4 weeks</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS Mastery</h3>
+                    <p>Flexbox, Grid, animations, and responsive design</p>
+                    <div class="card-footer">
+                        <span class="level">Intermediate</span>
+                        <span class="duration">6 weeks</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript Basics</h3>
+                    <p>DOM manipulation, events, and API integration</p>
+                    <div class="card-footer">
+                        <span class="level">Beginner</span>
+                        <span class="duration">8 weeks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Tell us about your goals..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Learning Journey</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>SelfCode Academy</span>
+                    </div>
+                    <p>Teaching web development since 2023</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SelfCode Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
